@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
+</head>
+<body class="d-flex flex-column h-100">
+  <header>
+  <div class="headerContainer align-items-center container-md d-flex justify-content-between">
+    <div class="logoContainer ml-1">
+       <img src='./assets/BOBI.svg' class='logo'>
+     </div>
+     <div class="navLinks d-flex">
+       <div class="navLink">
+          <a class="nav-link" href="#">Registration</a>
+        </div>
+        <div class="navLink">
+          <a class="nav-link" href="#">Contact us</a>
+        </div>
+    </div>
+  </div>
+</header>
+<div class="main h-100 container-md">
+  <div class="row">
+    <div class="col-md-5 registerLeft">
+       <div class="row">
+        <div class="textRegister col-12">
+          <p>Register your service with us and be discovered by communities that matter to you</p>
+        </div>
+        <div class="imgRegister col-12 order-first order-md-0">
+          <img src="assets/Bobi group.svg" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 registerRight">
+     <form class="registerForm">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="nameBusiness" aria-describedby="nameBusiness">
+        <label class="ml-5" for="nameBusiness">Name of business</label>
+      </div>
+
+      <div class="row">
+        <div class='col-auto'>
+          <small>Are you the owner</small>
+        </div>
+        <div class="col-auto">
+          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+          <label class="btn btn-outline-dark btn-sm radioBtn" for="option1">YES</label>
+        </div>
+        <div class="col-auto">
+          <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+          <label class="btn btn-outline-dark btn-sm radioBtn" for="option2">NO</label>
+        </div>
+      </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="typeBusiness">
+          <label class="" for="typeBusiness">Type of business</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="typeBusiness">
+          <label class="" for="typeBusiness">Type of business</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="typeBusiness">
+          <label class="" for="typeBusiness">Type of business</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="typeBusiness">
+          <label class="" for="typeBusiness">Type of business</label>
+        </div>
+       
+        <button type="submit" class="btn btn-primary btn-small submitBtn">Submit</button>
+      </form>  
+
+
+       
+      </div>
+
+    </div>
+  </div>
+
+  
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+       <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+  
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
