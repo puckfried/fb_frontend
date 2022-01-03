@@ -32,8 +32,32 @@ header{
 
 }
 
-.registerRight input{
+.registerRight .form-control[type="text"], .form-control[type="email"]{
     border-radius: 90px;
+    padding-left: 20px;
+}
+
+.registerRight #startHour {
+    border-bottom-left-radius: 90px;
+    border-top-left-radius: 90px;
+    padding-left: 20px;
+}
+
+.registerRight #closeHour {
+    border-bottom-right-radius: 90px;
+    border-top-right-radius: 90px;
+}
+
+
+
+.registerRight .form-control:focus{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+.registerRight label{
+    margin-left: 20px;
 }
 
 .registerRight  .radioBtn{
@@ -48,14 +72,52 @@ header{
     margin-right:50px;
 }
 
+.taggedInput {
+    position: relative;
+}
+
+.taggedInput #helpBox{
+    display: none;
+    font-size: 0.625rem;
+    padding: 10px;
+    background-color: #EEEEEE;
+    border-radius: 20px;
+}
+
+.taggedInput input:focus ~ #helpBox{
+    display: block;
+}
+
 .registerForm .submitBtn{
     border-radius: 30px;
+}
+
+.registerForm #fileUp {
+    display: none;
+}
+
+.registerForm .customFileUpload {
+    color: blue;
 }
 
 @media (min-width: 769px){
     .main {
         margin-top: 80px;
     }
+
+    .taggedInput input:focus ~ #helpBox{
+        display: block;
+        width: 129px;
+        font-size: 0.625rem;
+        padding: 10px;
+        background-color: #EEEEEE;
+        position: absolute;
+        right: 0;
+        top: 15px;
+        transform: translate(150px);
+    }
+    
+
 }
 
 @media (min-width: 1000px){

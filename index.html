@@ -41,11 +41,13 @@
     </div>
     <div class="col-md-7 registerRight">
      <form class="registerForm">
-      <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="nameBusiness" aria-describedby="nameBusiness">
-        <label class="ml-5" for="nameBusiness">Name of business</label>
+      <div class="row">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="nameBusiness" aria-describedby="nameBusiness">
+          <label class="ml-5" for="nameBusiness">Name of business</label>
+        </div>
       </div>
-
+      
       <div class="row">
         <div class='col-auto'>
           <small>Are you the owner</small>
@@ -59,28 +61,87 @@
           <label class="btn btn-outline-dark btn-sm radioBtn" for="option2">NO</label>
         </div>
       </div>
-
+      
+      <div class="row">  
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="typeBusiness">
-          <label class="" for="typeBusiness">Type of business</label>
+          <input type="text" class="form-control" id="typeBusinessReg">
+          <label class="" for="typeBusinessReg">Type of business</label>
         </div>
+      </div>
+      
+      <div class="row">
+        <div class="form-floating mb-3 taggedInput" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on top">
+          <input type="text" class="form-control" id="tagBusinessReg" >
+          <label class="" for="tagBusinessReg">Describe business</label>
+          <div id="helpBox">Hey there! Your business atributes will be treated like tags. You can separate them by comma or space.</div>
+        </div>
+      </div>
 
+      <div class="row">  
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="typeBusiness">
-          <label class="" for="typeBusiness">Type of business</label>
+          <input type="text" class="form-control" id="langSpokenReg">
+          <label class="" for="langSpokenReg">Language spoken</label>
         </div>
+      </div> 
 
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="typeBusiness">
-          <label class="" for="typeBusiness">Type of business</label>
+      <div class="row g-0">  
+        <div class="input-group mb-3">
+          <div class="form-floating col">
+            <input type="time" class="form-control" id="startHour" value="11:30" step="360000">
+            <label  for="startHour">Open from hh:mm AM/PM</label>
+          </div>
+          <div class="form-floating col">
+            <input type="time" class="form-control" id="closeHour" value="13:30" step="360000">
+            <label for="closeHour">to</label>
+          </div> 
         </div>
+      </div> 
 
+      <div class="row">  
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="typeBusiness">
-          <label class="" for="typeBusiness">Type of business</label>
+          <input type="text" class="form-control" id="locationReg">
+          <label class="" for="locationReg">Location</label>
         </div>
-       
-        <button type="submit" class="btn btn-primary btn-small submitBtn">Submit</button>
+      </div>
+      
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="telReg">
+          <label class="" for="telReg">Telephone</label>
+        </div>
+      </div> 
+
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="mailReg">
+          <label class="" for="mailReg">Email</label>
+        </div>
+      </div> 
+
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="webReg">
+          <label class="" for="webReg">Website</label>
+        </div>
+      </div> 
+
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="socialMediaReg">
+          <label class="" for="socialMediaReg">Social Media</label>
+        </div>
+      </div> 
+        
+        <div class="row">
+          <div class="col-auto mb-3">
+              <label for="fileUp" class="customFileUpload"><span>&#8593;</span> Upload picture</label>
+              <input class="form-control" type="file" id="fileUp" accept="image/*"> 
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary btn-small submitBtn">Submit</button>
+          </div>
+        </div>
+        
       </form>  
 
 
