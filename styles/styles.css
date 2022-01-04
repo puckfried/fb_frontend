@@ -1,15 +1,19 @@
 body {
   background-color: #e5e5e5;
+  height: 100vh;
   font-size: 100%;
   font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   background-color: #ffffff;
-  height: 80px;
+  min-height: 80px;
   width: 100vw;
   font-weight: 500;
   color: #385aef;
+  flex-grow: 0;
 }
 
 .headerContainer {
@@ -34,6 +38,11 @@ header .active::after {
   content: "";
   width: 6px;
   left: 50%;
+}
+
+
+.main {
+    flex-grow: 0;
 }
 
 .registerHead {
@@ -121,6 +130,7 @@ footer {
   width: 100%;
   color: #385aef;
   background-color: #ffffff;
+  flex-grow: 1;
 }
 
 footer h2 {
