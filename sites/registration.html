@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Document</title>
+</head>
+<body class="body">
+  <header>
+  <div class="headerContainer align-items-center container-md d-flex justify-content-between">
+      <div class="logoContainer ml-1">
+        <a href="../index.html"><img src='../assets/BOBI.svg' class='logo'></a>
+       </div>
+       <div class="navLinks d-flex">
+         <div class="navLink active">
+            <a class="nav-link" href="#">Registration</a>
+          </div>
+          <div class="navLink">
+            <a class="nav-link" href="./contact.html">Contact us</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="main container-md mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-5 registerHead">
+       <div class="row">
+        <div class="textRegister col-12">
+          <p>Register your service with us and be discovered by communities that matter to you</p>
+        </div>
+        <div class="imgRegister col-12 order-first order-md-0 my-5 my-md-0">
+          <img src="../assets/Bobi group.svg" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 registerFormWrapper">
+     <form class="registerForm">
+      <div class="row">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="nameBusiness" aria-describedby="nameBusiness">
+          <label class="ml-5" for="nameBusiness">Name of business</label>
+        </div>
+      </div>
+      
+      <div class="row owner">
+        <div class="col-auto"></div>
+        <div class='col-auto'>
+          <small>Are you the owner?</small>
+        </div>
+        <div class="col-auto">
+          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+          <label class="btn btn-outline-dark btn-sm radioBtn" for="option1">YES</label>
+        </div>
+        <div class="col-auto">
+          <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+          <label class="btn btn-outline-dark btn-sm radioBtn" for="option2">NO</label>
+        </div>
+      </div>
+      
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="typeBusinessReg">
+          <label class="" for="typeBusinessReg">Type of business</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="form-floating mb-3 taggedInput" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on top">
+          <input type="text" class="form-control" id="tagBusinessReg" >
+          <label class="" for="tagBusinessReg">Describe business</label>
+          <div id="helpBox">Hey there! Your business atributes will be treated like tags. You can separate them by comma or space.</div>
+        </div>
+      </div>
+
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="langSpokenReg">
+          <label class="" for="langSpokenReg">Language spoken</label>
+        </div>
+      </div> 
+
+      <div class="row g-0">  
+        <div class="input-group mb-3">
+          <div class="form-floating col">
+            <input type="time" class="form-control" id="startHour" value="11:30" step="360000">
+            <label  for="startHour">Open from</label>
+          </div>
+          <div class="form-floating col">
+            <input type="time" class="form-control" id="closeHour" value="13:30" step="360000">
+            <label for="closeHour">to</label>
+          </div> 
+        </div>
+      </div> 
+
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="locationReg">
+          <label class="" for="locationReg">Location</label>
+        </div>
+      </div>
+      
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="telReg">
+          <label class="" for="telReg">Telephone</label>
+        </div>
+      </div> 
+
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="mailReg">
+          <label class="" for="mailReg">Email</label>
+        </div>
+      </div> 
+
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="webReg">
+          <label class="" for="webReg">Website</label>
+        </div>
+      </div> 
+
+      <div class="row">  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="socialMediaReg">
+          <label class="" for="socialMediaReg">Social Media</label>
+        </div>
+      </div> 
+        
+        <div class="row justify-content-end mt-3 mb-5 align-items-center">
+          <div class="col-auto">
+              <label for="fileUp" class="customFileUpload"><span>&#8593;</span> Upload picture</label>
+              <input class="form-control" type="file" id="fileUp" accept="image/*"> 
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary btn-small submitBtn">Send</button>
+          </div>
+        </div>
+        
+      </form>  
+
+
+       
+      </div>
+
+    </div>
+  </div>
+
+  
+  <footer>
+   <div class="container-md">
+    <div class="row justify-content-center ">
+     <div class="col-md-3 mt-5">
+       <h2>Findbobi</h2>
+     </div>
+     <div class="col-md-3 mt-5">
+       <h3>Popular Searches</h3>
+       <ul>
+         <li>Dentists</li>
+         <li>Bars</li>
+         <li>Catering</li>
+       </ul>
+     </div>
+     <div class="col-md-3 mt-5">
+       <h3>Popular Locations</h3>
+       <ul>
+         <li>Berlin</li>
+         <li>Hamburg</li>
+         <li>Cologne</li>
+       </ul>
+     </div>
+     <div class="col-md-3 mt-5">
+      <h3>About us</h3>
+      <ul>
+        <li>Who we are</li>
+        <li>Contact us</li>
+        <li>Legal notice</li>
+        <li>Terms of use</li>
+        <li>Privacy statement</li>
+      </ul>
+    </div>
+    
+   </div>
+  </div>
+  </footer>
+  
+  <script src=".../script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

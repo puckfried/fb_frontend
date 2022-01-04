@@ -12,6 +12,7 @@ header{
     font-weight: 500;
     color: #385AEF;
 }
+
 .headerContainer{
     height: 100%
 }
@@ -20,51 +21,72 @@ header{
     height: 35px;
 }
 
-.main{
-    /* margin-top: 20px; */
+header .active {
+    position: relative;
 }
 
+header .active::after {
+    transform: translateX(-50%);
+    border-radius: 100%;
+    position: absolute;
+    background: #385AEF;
+    bottom: 0px;
+    height: 6px;
+    content: '';
+    width: 6px;
+    left: 50%;
+  }
 
-.registerLeft{
+
+.registerHead{
     font-size: 2.5rem;
     color: #385AEF;
     font-weight: 700;
 
 }
 
-.registerRight .form-control[type="text"], .form-control[type="email"]{
+.registerFormWrapper .form-control[type="text"], .form-control[type="email"]{
     border-radius: 90px;
     padding-left: 20px;
 }
 
-.registerRight #startHour {
+.owner div:nth-of-type(3){
+    margin-left: -20px;
+}
+
+.owner div:last-of-type{
+    margin-left: -20px;
+}
+
+.registerFormWrapper  .radioBtn{
+    border-radius: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+
+.registerFormWrapper #startHour {
     border-bottom-left-radius: 90px;
     border-top-left-radius: 90px;
     padding-left: 20px;
 }
 
-.registerRight #closeHour {
+.registerFormWrapper #closeHour {
     border-bottom-right-radius: 90px;
     border-top-right-radius: 90px;
 }
 
 
 
-.registerRight .form-control:focus{
+.registerFormWrapper .form-control:focus{
     -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid black;
 }
 
-.registerRight label{
+.registerFormWrapper label{
     margin-left: 20px;
-}
-
-.registerRight  .radioBtn{
-    border-radius: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 20px;
 }
 
 .registerForm {
@@ -100,6 +122,36 @@ header{
     color: blue;
 }
 
+
+
+footer {
+    width: 100%;
+    color: #385AEF;
+    background-color: #FFFFFF;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+}
+
+
 @media (min-width: 769px){
     .main {
         margin-top: 80px;
@@ -125,12 +177,3 @@ header{
         width: 70%;
     }
 }
-
-
-
-
-
-/* .footer {
-background-color: green;
-width: 100%;
-} */
