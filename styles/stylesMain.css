@@ -7,7 +7,7 @@ body {
 }
 
 .teaser {
-  height: 800px;
+  height: 1000px;
   width: 100vw;
   background-image: url("../assets/img.png");
   background-size: cover;
@@ -33,6 +33,17 @@ body {
 
 .teaser .searchForm {
   position: absolute;
+  top: 20%
+}
+
+
+.teaser .searchForm input:first-of-type {
+  border-radius: 30px;
+}
+
+.teaser .searchForm .input-group-text {
+  background-color: white;
+  border-radius: 30px;
 }
 
 .teaser .searchForm input {
@@ -45,14 +56,6 @@ body {
     max-width: 300px;
   }
 
-.teaser .searchForm input:first-of-type {
-  border-radius: 30px;
-}
-
-.teaser .searchForm .input-group-text {
-  background-color: white;
-  border-radius: 30px;
-}
 
 .teaser .searchForm select {
   color: gray;
@@ -61,3 +64,21 @@ body {
 .teaser .searchForm button {
   border-radius: 30px;
 }
+
+
+@media (min-width: 576px) {
+  .teaser h1 {
+    
+  }
+
+  
+}
+
+
+@media (min-width: 1000px) {
+  .teaser h1 {
+    
+  }
+}
+
+
