@@ -1,0 +1,108 @@
+
+.registerHead {
+  font-size: 2.5rem;
+  color: #385aef;
+  font-weight: 700;
+}
+
+.registerFormWrapper .form-control[type="text"],
+.form-control[type="email"] {
+  border-radius: 90px;
+  padding-left: 20px;
+}
+
+.owner div:nth-of-type(3) {
+  margin-left: -20px;
+}
+
+.owner div:last-of-type {
+  margin-left: -20px;
+}
+
+.registerFormWrapper .radioBtn {
+  border-radius: 36px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+
+.registerFormWrapper #startHour {
+  border-bottom-left-radius: 90px;
+  border-top-left-radius: 90px;
+  padding-left: 20px;
+}
+
+.registerFormWrapper #closeHour {
+  border-bottom-right-radius: 90px;
+  border-top-right-radius: 90px;
+}
+
+.registerFormWrapper .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid black;
+}
+
+.registerFormWrapper label {
+  margin-left: 20px;
+}
+
+.registerForm {
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+.taggedInput {
+  position: relative;
+}
+
+.taggedInput #helpBox {
+  display: none;
+  font-size: 0.625rem;
+  padding: 10px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+
+.taggedInput input:focus ~ #helpBox {
+  display: block;
+}
+
+.registerForm .submitBtn {
+  border-radius: 30px;
+}
+
+.registerForm #fileUp {
+  display: none;
+}
+
+.registerForm .customFileUpload {
+  color: blue;
+}
+
+
+@media (min-width: 576px) {
+  .main {
+    margin-top: 80px;
+  }
+
+  .taggedInput input:focus ~ #helpBox {
+    display: block;
+    width: 129px;
+    font-size: 0.625rem;
+    padding: 10px;
+    background-color: #eeeeee;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    transform: translate(150px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .textRegister {
+    width: 70%;
+  }
+}
+
+
